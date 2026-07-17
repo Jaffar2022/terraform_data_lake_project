@@ -57,5 +57,5 @@ terraform plan
 terraform apply
 terraform state
 terraform output
-terraform destroy (to delete)
+terraform destroy (before logging out of the day, then next terraform init and terraform apply and then start)
 
