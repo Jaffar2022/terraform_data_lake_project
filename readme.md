@@ -16,8 +16,9 @@
                         │
                   Amazon QuickSight
 
-Project Structure - project1
+## 📁 Project Structure - Project 1
 
+```text
 terraform-data-lake/
 │
 ├── provider.tf
@@ -32,21 +33,22 @@ terraform-data-lake/
 ├── terraform.tfvars
 │
 ├── glue_scripts/
-│      etl_job.py
+│   └── etl_job.py
 │
 ├── datasets/
-│      sales.csv
+│   └── sales.csv
 │
 └── README.md
+```
 
-Day 1: Create S3 buckets with Terraform.
-Day 2: Add IAM roles and policies.
-Day 3: Create a KMS key and enable S3 encryption.
-Day 4: Provision a Glue Database and Crawler.
-Day 5: Upload the PySpark ETL script to S3 and create the Glue Job.
-Day 6: Provision Redshift Serverless and load the transformed Parquet data.
-Day 7: Connect QuickSight and build a dashboard.
-Day 8: Refactor the Terraform code into reusable modules (modules/s3, modules/iam, modules/glue, etc.) and store it in GitHub.
+* **Day 1:** Create S3 buckets with Terraform.
+* **Day 2:** Add IAM roles and policies.
+* **Day 3:** Create a KMS key and enable S3 bucket encryption.
+* **Day 4:** Provision an AWS Glue Database and Glue Crawler.
+* **Day 5:** Upload the PySpark ETL script to S3 and create the AWS Glue Job.
+* **Day 6:** Provision Amazon Redshift Serverless and load the transformed Parquet data.
+* **Day 7:** Connect Amazon QuickSight and build an analytics dashboard.
+* **Day 8:** Refactor the Terraform code into reusable modules (e.g., `modules/s3`, `modules/iam`, `modules/glue`, `modules/redshift`, etc.) and push the project to GitHub.
 
 By the end, you'll have an end-to-end AWS data engineering project that demonstrates both infrastructure automation with Terraform and ETL development with Glue and PySpark—exactly the combination many AWS Data Engineer interviewers look for.
 
