@@ -1,11 +1,7 @@
-output "raw_bucket" {
-  value = aws_s3_bucket.raw.bucket
+output "kms_key_arn" {
+  value = aws_kms_key.data_lake_key.arn
 }
 
-output "processed_bucket" {
-  value = aws_s3_bucket.processed.bucket
-}
-
-output "scripts_bucket" {
-  value = aws_s3_bucket.scripts.bucket
+output "kms_key_id" {
+  value = aws_kms_key.data_lake_key.key_id
 }

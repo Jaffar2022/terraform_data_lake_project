@@ -1,7 +1,16 @@
-variable "aws_region" {
-  default = "ap-south-1"
+variable "raw_bucket_name" {
+  type = string
 }
 
-variable "project_name" {
-  default = "terraform-data-lake"
+variable "processed_bucket_name" {
+  type = string
+}
+
+variable "scripts_bucket_name" {
+  type = string
+}
+
+variable "aws_region" {
+  type    = string
+  default = "ap-south-1"
 }
